@@ -2,85 +2,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Darwin</title>
+    <title>Darwin-Css</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Monoton&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
   </head>
   <body>
-    <table cellspacing=20>
-      <tr>
-        <td><img src="selfie" alt=""></td>
-        <td>
-          <h1>Tianhao(Ross) Wang</h1>
-          <p>
-            <i>
-            Sr Software Engineer @ <a href="https://www.uber.com/">Uber Technologies Inc.</a><br>
-            Former Software Engineer @ <a href="https://www.sra.samsung.com/">Samsung Research America</a><br>
-            M.S @ <a href="https://www.cmu.edu/">Carnegie Mellon University</a><br>
-            B.S @ <a href="http://en.sjtu.edu.cn/">Shanghai Jiaotong University</a> <br>
-            Let's connect @ <a href="https://www.linkedin.com/in/tianhao-wang-cmu/">linkedin</a><br>
-            Sunnyvale, CA 94089 <br>
-          </i>
-          </p>
-        </td>
-      </tr>
-    </table>
-    <p>
-      <br><br>
-      Hi Visitor, I am Ross, Tianhao Wang(王天豪). Now I am working in Uber as a Senior Software Engineer in payment platform team. I love reading, thinking and coding. Please feel free to contact me for anything! <a href="tianhaow1989@gmail.com">tianhaow1989@gmail.com</a>. Glad to make more friends and hear different stories!
-    </p>
-
+  <div class="top-container">
+    <!-- img/h2/pare blocking element
+          spans are inline element, inline element doesn't change width -->
+    <img src="images/cloud.png" class="top-cloud" alt="cloud-img">
+    <h1 class="greet">Hi, Tianhao(Ross) Here</h1>
+    <h2 class="intro">a <span class="pro">software engineer</span></h2>
+    <div class="background-div">
+      <img src="images/cloud.png" class="buttom-cloud" alt="cloud-img">
+      <img src="images/mountain.png" alt="mountain-img">
+    </div>
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="selfie" alt="">
+      <h2>Hello.</h2>
+      <p class="intro-p">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+    </div>
     <hr>
-
-    <h3>Skill Set</h3>
-    <h4>Fluent-In</h4>
-    <table cellspacing=10>
-      <tr>
-        <td>Java</td>
-        <td>🌟🌟🌟🌟🌟</td>
-      </tr>
-      <tr>
-        <td>Kafka</td>
-        <td>🌟🌟🌟🌟</td>
-      </tr>
-      <tr>
-        <td>Spring</td>
-        <td>🌟🌟🌟🌟🌟</td>
-      </tr>
-      <tr>
-        <td>System Design/Refactoring</td>
-        <td>🌟🌟🌟🌟</td>
-      </tr>
-    </table>
-
-    <h4>Learning</h4>
-    <table cellspacing=10>
-      <tr>
-        <td>HTML</td>
-        <td>🌟🌟</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>🌟🌟</td>
-      </tr>
-      <tr>
-        <td>DynamoDB</td>
-        <td>🌟🌟🌟</td>
-      </tr>
-      <tr>
-        <td>AWS</td>
-        <td>🌟🌟</td>
-      </tr>
-      <tr>
-        <td>Javascript</td>
-        <td>🌟🌟</td>
-      </tr>
-    </table>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="c1" src="images/chillies.png" alt="">
+        <h3>Lorem & Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+      </div>
+      <div class="skill-row">
+        <img class="c2" src="images/chillies.png" alt="">
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      </div>
+    </div>
     <hr>
-    <h3>Contact Me</h3>
-    <form action="mailto:tianhao1989@gmail.com?subject=Let's link!" method="post" enctype="text/plain">
-      <label>Name</label><input type="test" name="userName" value=""><br>
-      <label>Your File</label><input type="file" name="" value=""><br>
-      <input type="submit" name="" value="link!">
-    </form>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    <p>© 2018 Name Surname.</p>
+  </div>
+
   </body>
 </html>
