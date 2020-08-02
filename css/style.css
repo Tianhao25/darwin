@@ -1,0 +1,28 @@
+body {
+  background-color: #EAF6F6;
+}
+
+h1 {
+    color: #66BFBF;
+}
+
+h3 {
+    color: #66BFBF;
+}
+
+h4 {
+    color: #66BFBF;
+}
+
+hr {
+  background-color: inherit;
+  border-style: dotted none none none;
+  border-width: 5px;
+  border-spacing: 10px;
+  border-color: grey;
+  width: 10%;
+}
+
+img {
+  height: 200px;
+}
