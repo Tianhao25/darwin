@@ -108,3 +108,11 @@ p {
   float: right;
   margin-left: 30px;
 }
+
+.clear-right {
+  clear: right;
+}
+
+.clear-left {
+  clear: left;
+}
