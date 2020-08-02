@@ -7,3 +7,5 @@ Simple page to set up github pages
 
 ## 0.0.2 Pure HTML Profile Page
 Use only HTML to build a well formatted self profile page
+
+## 0.0.3 CSS it and beautify the page
