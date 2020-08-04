@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Darwin-Css</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Monoton&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Darwin-Css</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Monoton&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/650043ad0a.js" crossorigin="anonymous"></script>
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
   <div class="top-container">
     <!-- img/h2/pare blocking element
           spans are inline element, inline element doesn't change width -->
     <img src="images/cloud.png" class="top-cloud" alt="cloud-img">
-    <h1 class="greet">Hi, Tianhao(Ross) Here</h1>
+    <h1 class="greet">Hi, Tianhao Here</h1>
     <h2 class="intro">a <span class="pro">software engineer</span></h2>
     <div class="background-div">
       <img src="images/cloud.png" class="buttom-cloud" alt="cloud-img">
@@ -20,38 +32,54 @@
   </div>
   <div class="middle-container">
     <div class="profile">
-      <img src="selfie" alt="">
+      <img class="rounded-img" src="selfie" alt="">
       <h2>Hello.</h2>
-      <p class="intro-p">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+      <p class="intro-p">This is Tianhao, call me Ross if that is easier to pronounce. Currently I am working at Uber as a senior software engineer. Programming is my life-long interest. I wrote my first line of code when I was 9 years old and I am still coding. If you are the same, let's connect and chat!</p>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="c1" src="images/chillies.png" alt="">
-        <h3 class="clear-right">Lorem & Ipsum</h3>
-        <p class="clear-right">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+  </div>
+  <section class="blue-background">
+    <div id="skillsSlides" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="c1" src="images/chillies.png" alt="">
+          <h3 class="clear-right">Java & Spring</h3>
+          <p class="clear-right">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+        </div>
+        <div class="carousel-item">
+          <img class="c2" src="images/chillies.png" alt="">
+          <h3 class="clear-left">Javascript & Nodejs</h3>
+          <p class="clear-left">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+        </div>
       </div>
-      <div class="skill-row">
-        <img class="c2" src="images/chillies.png" alt="">
-        <h3 class="clear-left">Lorem Ipsum Dolor</h3>
-        <p class="clear-left">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-      </div>
+      <a class="carousel-control-prev" href="#skillsSlides" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#skillsSlides" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <hr>
+  </section>
+  <section>
     <div class="contact-me">
       <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      <h3>More Than Willing To Connect!</h3>
+      <p>I do enjoy meeting new friends and hear amazing new stories, please contact me freely and let's connect.</p>
+      <a class="btn btn-info" href="mailto:tianhaow1989@gmail.com">CONTACT ME</a>
     </div>
-  </div>
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p>© 2018 Name Surname.</p>
-  </div>
+  </section>
+  <footer class="footer  py-3">
+    <div class="bottom-container">
+      <a class="btn btn-light btn-sm" href="https://wwww.linkedin.com/in/tianhao-wang-cmu"> <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;LinkedIn</a>
+      <a class="btn btn-light btn-sm" href="https://twitter.com/"><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+      <a class="btn btn-light btn-sm" href="https://tianhao25.github.io/darwin/"><i class="fas fa-blog"></i>&nbsp;&nbsp;Website</a>
+      <p>© 2020 Tianhao Wang</p>
+    </div>
+  </footer>
 
-  </body>
+
+
+</body>
+
 </html>
