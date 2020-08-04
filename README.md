@@ -9,3 +9,6 @@ Simple page to set up github pages
 Use only HTML to build a well formatted self profile page
 
 ## 0.0.3 CSS it and beautify the page
+
+## 0.0.4 Bootstrap the website and add more meaningful words
+used multiple bootstrap components to refactored the website again
